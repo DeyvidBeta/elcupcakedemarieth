@@ -1,0 +1,92 @@
+:root {
+    --fontMenu: sans-serif;
+    --fontSize: 16px;
+    --colorFondo: rgb(0,0,0,100%);
+    --colorFondoEnlaces: rgb(0,0,0,75%);
+    --colorFondoEnlaces2: #5d4e6c;
+    --colorTextoEnlaces: #9edbd3;
+    --colorTextoEnlaces2: #e36a8c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    font-family: var(--fontMenu);
+    overflow: hidden;
+    min-height: 100vh;
+    /* background-color: rgb(136, 0, 255); */
+    background: linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(187,0,255,0.9732843821122199) 0%, rgba(129,79,217,1) 27%, rgba(201,96,254,1) 53%, rgba(236,145,228,0.9004552504595589) 67%, rgba(195,196,203,1) 79%, rgba(89,217,125,1) 89%, rgba(0,195,255,1) 96%);
+
+}
+
+.header .navbar  {
+    /* background-color: var(--colorFondoEnlaces); */
+    /* background-color: #fff; */
+}
+
+.header .navbar .logo {
+    position: absolute;
+    top: 0;
+    left: 5%;
+
+    width: 10rem;
+    height: 7.5rem;
+    background-color: var(--colorFondo);
+    border-radius: 0 0 20px 20px;
+    /* margin: 1em 4em; */
+    /* z-index: 10; */
+}
+
+.header .navbar .menu li a{
+    display: inline-block;
+    line-height: 1rem;
+    color: var(--colorTextoEnlaces);
+    /* color: bla; */
+    background-color: var(--colorFondoEnlaces);
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: .3s;
+    border: 2px solid currentColor;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+
+
+.header .navbar .menu li a:hover{
+    color: var(--colorTextoEnlaces2);
+    /* background-color: var(--colorFondoEnlaces2); */
+    /* border: 1px solid currentColor; */
+    
+}
+
+
+
+.header .navbar .menu li a::before{
+    content: " ";
+    position: absolute;
+    /* background-color: blue; */
+    width: 5px;
+    height: 5px;
+    left: 3px;
+    top: 5px;
+    /* right: 2px; */
+    /* bottom: 1px; */
+    /* border: 2px solid yellow; */
+    /* z-index: 100; */
+ }
+
+
+.header .navbar [type="checkbox"],
+.header .navbar .btn_menu
+ {
+    display: none;
+}

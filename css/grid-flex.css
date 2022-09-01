@@ -1,0 +1,21 @@
+body {
+
+}
+
+.header .navbar {
+    line-height: 4.5rem;
+    background-color: var(--colorFondo);
+    padding-left: 50%;
+    /* align-items: center; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 3fr; */
+}
+
+.header .navbar .menu {
+    /* background-color: rgb(255,255,255,0.2); */
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
